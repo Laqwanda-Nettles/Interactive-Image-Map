@@ -13,24 +13,29 @@
       help you choose. Click on the protein you're in the mood for.
     </p>
     <div style="position: relative">
+      <!--Followed the same syntax for img but to make clickable image map usemap attribute was added.-->
       <img
         src="meat.jpg"
         alt="four plates with uncooked seasoned meat on each - chicken, lamb, pork"
         usemap="#dinner"
       />
+      <!--For the map element it has a required attribute, name. The value of name must be the same as usemap but without the #.-->
       <map id="dinner" name="dinner">
+        <!--The area element is what makes the image map clickable. The shape of the area must be defined. I chose circle because of the image I used. To locate my coordinates, I first picked an Image that I knew the dimensions to and tried to place my first circle in the middle. There is no concrete way I used to find my coordinates; I just adjusted the numbers until they correct.-->
         <area
           shape="circle"
           coords="160,300,130"
           alt="chicken thigh recipe"
           href="https://www.twopeasandtheirpod.com/easy-skillet-chicken-thighs/"
         />
+        <!--The first number of coords, I noticed affected how far left the circle went. The second, adjust the coords from top to bottom. The last, the radius.-->
         <area
           shape="circle"
           coords="435,300,130"
           alt="chicken recipes"
           href="https://www.delish.com/cooking/recipe-ideas/g2972/chicken-weeknight-dinners/"
         />
+        <!--The alt attribute in area gives description to what the href is linked to.-->
         <area
           shape="circle"
           coords="160,575,130"
