@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Food Map</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>What's for dinner?</h1>
@@ -11,10 +12,21 @@
       Don't know what you would like to eat tonight? Well, let the image below
       help you choose. Click on the protein you're in the mood for.
     </p>
-    <img
-      src="meat.jpg"
-      alt="four plates with uncooked seasoned meat on each - chicken, beef, pork"
-      usemap="#dinner"
-    />
+    <div style="position: relative">
+      <img
+        src="meat.jpg"
+        alt="four plates with uncooked seasoned meat on each - chicken, beef, pork"
+        usemap="#dinner"
+      />
+      <map id="dinner" name="dinner">
+        <area
+          shape="circle"
+          coords="160,300,155"
+          alt="chicken thigh"
+          href="https://www.twopeasandtheirpod.com/easy-skillet-chicken-thighs/"
+        />
+      </map>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
